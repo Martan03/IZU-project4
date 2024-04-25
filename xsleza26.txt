@@ -1,10 +1,73 @@
 Zadani c. 381
 
-Metodou K-means clustering zaradte nasledujci body (x,y,z) v 3D prostoru 
-( 5,-3, 7) (-7, 9,-5) (-6, 9,-6) (-6, 9, 8) ( 6,-6,-6) (-4, 0, 7) ( 0, 5, 3) ( 4,-8, 8) ( 9, 1, 8) ( 0,-6, 4) 
-do 3 shluku s pocatecnimi stredy 
+Metodou K-means clustering zaradte nasledujci body (x,y,z) v 3D prostoru
+( 5,-3, 7) (-7, 9,-5) (-6, 9,-6) (-6, 9, 8) ( 6,-6,-6) (-4, 0, 7) ( 0, 5, 3) ( 4,-8, 8) ( 9, 1, 8) ( 0,-6, 4)
+do 3 shluku s pocatecnimi stredy
 ( 5,-3, 7) ( 4,-8, 8) ( 0,-6, 4).
 
-Vysledky vypoctu zaokrouhlujte na dve desetinna mista. 
+Vysledky vypoctu zaokrouhlujte na dve desetinna mista.
 
+Iteration 0:
+Cluster 1:
+Centroid: (5, -3, 7)
+Points:
 
+Cluster 2:
+Centroid: (4, -8, 8)
+Points:
+
+Cluster 3:
+Centroid: (0, -6, 4)
+Points:
+
+Iteration 1:
+Cluster 1:
+Centroid: (2, 3, 6)
+Points: (5, -3, 7), (-6, 9, 8), (0, 5, 3), (9, 1, 8)
+
+Cluster 2:
+Centroid: (4, -8, 8)
+Points: (4, -8, 8)
+
+Cluster 3:
+Centroid: (-2, 1, -1)
+Points: (-7, 9, -5), (-6, 9, -6), (6, -6, -6), (-4, 0, 7), (0, -6, 4)
+
+Iteration 2:
+Cluster 1:
+Centroid: (0, 3, 6)
+Points: (-6, 9, 8), (-4, 0, 7), (0, 5, 3), (9, 1, 8)
+
+Cluster 2:
+Centroid: (3, -5, 6)
+Points: (5, -3, 7), (4, -8, 8), (0, -6, 4)
+
+Cluster 3:
+Centroid: (-2, 4, -5)
+Points: (-7, 9, -5), (-6, 9, -6), (6, -6, -6)
+
+Iteration 3:
+Cluster 1:
+Centroid: (-3, 4, 6)
+Points: (-6, 9, 8), (-4, 0, 7), (0, 5, 3)
+
+Cluster 2:
+Centroid: (4, -4, 4)
+Points: (5, -3, 7), (6, -6, -6), (4, -8, 8), (9, 1, 8), (0, -6, 4)
+
+Cluster 3:
+Centroid: (-6, 9, -5)
+Points: (-7, 9, -5), (-6, 9, -6)
+
+Iteration 4:
+Cluster 1:
+Centroid: (-3, 4, 6)
+Points: (-6, 9, 8), (-4, 0, 7), (0, 5, 3)
+
+Cluster 2:
+Centroid: (4, -4, 4)
+Points: (5, -3, 7), (6, -6, -6), (4, -8, 8), (9, 1, 8), (0, -6, 4)
+
+Cluster 3:
+Centroid: (-6, 9, -5)
+Points: (-7, 9, -5), (-6, 9, -6)

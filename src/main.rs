@@ -24,18 +24,18 @@ fn main() {
         (0, -6, 4).into(),
     ];
 
-    let clusters = k_means(&points, clusters);
-    for (i, cluster) in clusters.iter().enumerate() {
-        println!("Cluster {}:", i + 1);
-        println!("{cluster}\n");
-    }
+    _ = k_means(&points, clusters);
 }
 
 fn k_means<'a>(
     points: &'a Vec<Point>,
     mut clusters: Vec<Cluster<'a>>,
 ) -> Vec<Cluster<'a>> {
+    println!("Iteration 0:");
+    print_clusters(&clusters);
+
     let mut con = true;
+    let mut i = 1;
     while con {
         con = false;
         for c in &mut clusters {
@@ -53,6 +53,10 @@ fn k_means<'a>(
                 con = true;
             }
         }
+
+        println!("Iteration {i}:");
+        print_clusters(&clusters);
+        i += 1;
     }
     clusters
 }
@@ -70,4 +74,11 @@ fn closest_cluster(clusters: &[Cluster], point: &Point) -> usize {
     }
 
     closest
+}
+
+fn print_clusters(clusters: &[Cluster]) {
+    for (i, cluster) in clusters.iter().enumerate() {
+        println!("Cluster {}:", i + 1);
+        println!("{cluster}\n");
+    }
 }
